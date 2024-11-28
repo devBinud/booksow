@@ -1,3 +1,9 @@
+.searchInput__dropdownImage{
+    width:40px;
+    height:45px;
+    margin-right:10px;
+}
+
 .topbar__two {
     position: fixed; /* Keeps it fixed on the top */
     top: 37px!important;  
