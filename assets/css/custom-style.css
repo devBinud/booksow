@@ -1,0 +1,1571 @@
+.button__wishlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+ 
+}
+.button__wishlist .login__buttonWishlist{
+    padding: 7px 20px;
+    border: 1px solid #ccc;
+    background-color:#ee5c5c;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 14px;
+}
+.login__buttonWishlist:hover{
+   color: #fff!important;
+   background-color: #d04e4e;
+}
+.prev-btn, .next-btn {
+    width: 40px; /* Set width of button */
+    height: 40px; /* Set height of button */
+    padding: 10px;
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 50%; /* Make the button rounded */
+    background-color: #f1f1f1; /* Background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and scale */
+}
+.prev-btn{
+    margin-right: 13px;
+}
+.prev__nextButton{
+    margin-top: -10px;
+    padding-bottom: 10px;
+    /* background-color: #28a745; */
+}
+.prev-btn:hover, .next-btn:hover {
+    background-color: #f7d4ca; /* Change to a blue color on hover */
+    transform: scale(1); /* Slightly enlarge the button on hover */
+}
+
+.prev-btn:disabled, .next-btn:disabled {
+    background-color: #dcdcdc; /* Light grey background when disabled */
+    cursor: not-allowed; /* Change cursor to indicate that the button is disabled */
+    transform: scale(1); /* Keep size normal when disabled */
+}
+
+.prev-btn i, .next-btn i {
+    color: #000; /* Icon color */
+    font-size: 16px; /* Set icon size */
+}
+
+.prev-btn:disabled i, .next-btn:disabled i {
+    color: #a9a9a9; /* Light grey icon color when disabled */
+}
+
+
+.user__icon{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 9px;
+    margin-left: -10px;
+    display: none;
+}
+.codNoticeText{
+    display: block;
+    color: #757474;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 600;
+    background:rgb(255 244 201);
+    padding: 4px 20px;
+    border-radius:5px
+}
+.user__icon{
+    width: 30px;
+    height: 30px;
+}
+.bestSellers__home .horizontal-scroll {
+    display: flex;
+    gap: 15px; /* Space between cards */
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: none; /* For Firefox */
+}
+
+.bestSellers__home .horizontal-scroll::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height */
+}
+
+.bestSellers__home .horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: #d04e4e; /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+.bestSellers__home .horizontal-scroll::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track color */
+}
+
+.bestSellers__home .card {
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+    width: 200px; /* Set card width */
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.bestSellers__home .card .card-body {
+    padding: 10px;
+}
+
+.bestSellers__home .card-buttons {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+.bestSellers__home .card .card-body{
+    padding-left: 13px!important;
+}
+.bestSellers__home .card .card-body .card-title {
+    color: #444;
+    font-size: 14px;
+}
+.bestSellers__home .card .card-body .card-title:hover {
+    color: #4a4141;
+    font-size: 14px;
+}
+/* NEW ARRIVALS SECTION */
+.newArrivals__home {
+    margin-top: -30px;
+}
+
+.newArrivals__home .horizontal-scroll {
+    display: flex;
+    gap: 15px; /* Space between cards */
+    overflow-x: auto;
+    padding: 6px 0;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.newArrivals__home .horizontal-scroll::-webkit-scrollbar {
+    display: none; /* For WebKit browsers (Chrome, Safari, etc.) */
+}
+
+.newArrivals__home .card {
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+    width: 200px; /* Set card width */
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.newArrivals__home .card .card-body {
+    padding: 10px;
+}
+
+.newArrivals__home .card .card-body {
+    padding-left: 13px !important;
+}
+
+.newArrivals__home .card .card-body .card-title {
+    color: #444;
+    font-size: 14px;
+}
+
+.newArrivals__home .card .card-body .card-title:hover {
+    color: #4a4141;
+    font-size: 14px;
+}
+
+.newArrivals__home .card-buttons {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+/* SHORT SELF HELP BOOK SECTION  */
+.shortSelfHelp__books .horizontal-scroll {
+    display: flex;
+    gap: 15px; /* Space between cards */
+    overflow-x: auto;
+    padding: 20px 0;
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+}
+
+.shortSelfHelp__books .horizontal-scroll::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar */
+}
+
+.shortSelfHelp__books .card .card-body{
+    padding-left: 13px!important;
+}
+
+.shortSelfHelp__books .card .card-body .card-title {
+    color: #444;
+    font-size: 14px;
+}
+
+.shortSelfHelp__books .card .card-body .card-title:hover {
+    color: #4a4141;
+    font-size: 14px;
+}
+
+.shortSelfHelp__books .card {
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+    width: 200px; /* Set card width */
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.shortSelfHelp__books .card .card-body {
+    padding: 10px;
+}
+
+.shortSelfHelp__books .card-buttons {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-box {
+    background-color: #f3f9ff;
+    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 100%;
+  }
+  
+  .contact .info-box h3 {
+    color: #4b4848;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 767.98px) {
+    .contact .info-box h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+  }
+  
+  .contact .info-box p {
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+  
+  .contact .info-box a {
+    color: var(--contrast-color);
+  }
+  
+  @media (max-width: 992px) {
+    .contact .info-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  .contact .info-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact .info-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact .info-item .icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #d76969;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+  }
+  
+  .contact .info-item .icon-box i {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  
+  .contact .info-item:hover .icon-box {
+    background-color: #db5858;
+  }
+  
+  .contact .info-item .content h4 {
+    color: #545151;
+    font-size: 1.01rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .contact .info-item .content p {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .contact .info-item .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact .info-item .icon-box:hover {
+    background-color: #db5858;
+  }
+  
+  .contact .contact-form {
+    background-color: var(--surface-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  @media (max-width: 992px) {
+    .contact .contact-form {
+      padding: 1.5rem;
+    }
+  }
+  
+  .contact .contact-form h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .contact .contact-form h3 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .contact .contact-form p {
+    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    margin-bottom: 2rem;
+  }
+  
+  .contact .contact-form .form-control,
+  .contact .contact-form .form-select {
+    padding: 0.875rem 1.25rem;
+    border-color: color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 0.5rem;
+    background-color: color-mix(in srgb, var(--surface-color) 90%, white 5%);
+    color: var(--default-color);
+  }
+  
+  .contact .contact-form .form-control:focus,
+  .contact .contact-form .form-select:focus {
+    box-shadow: none;
+    border-color: var(--accent-color);
+  }
+  
+  .contact .contact-form .form-control::placeholder,
+  .contact .contact-form .form-select::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+  }
+  
+  .contact .contact-form .btn {
+    background-color: #e14646;
+    color: var(--contrast-color);
+    padding: 1.1rem 2.5rem;
+    border-radius: 0.4rem;
+    display: inline-flex;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .contact .contact-form .btn i {
+    font-size: 1.25rem;
+  }
+  
+  .contact .contact-form .btn:hover {
+    background-color: #d33838;
+  }
+  
+
+/* SEARCH CONTAINER  */
+.logo__loginPage{
+
+}
+.prodDetails__ratings{
+    display: flex;
+}
+.features__productDetails{
+    margin-top: -10px;
+}
+.ratings__andLanguagesBox{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #ddd
+}
+.productDetails__featuresBox{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 20px;
+}
+.prodDetails__review{
+    margin-top: 17px;
+    color: #444;
+    font-size: 14px;
+    font-weight:600;
+}
+.prodetails__featureIcon{
+    width: 50px;
+    height: 50px;
+}
+.prodetails__featureText{
+   font-size: 11px;
+   margin-top: 7px;
+   color: #898282;
+}
+.productDetails__descriptionUpdated{
+    display: flex!important;
+    background-color: #242121;
+}
+.productDetails__ratings{
+    display: flex!important;
+}
+
+.language__prodDetails{
+    display: flex;
+}
+.englishLanguage__prodDetails{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #86878c;
+    padding-top: 9px;
+}
+/* ORDER SUCCESSFULL  */
+
+.section__fillGap__orderSuccessfull{
+    /* padding-top: 150px; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fcfcfc;
+}
+
+.section__fillGap__orderSuccessfull {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.orderSuccess__box {
+    max-width: 700px;
+    background-color: #fff; /* White box */
+    border-radius: 0px;
+    text-align: center;
+}
+
+.orderSuccess__icon {
+    width: 80px;
+    height: 80px;
+}
+
+.orderSuccess__title {
+    color: #404240; /* Green color */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.orderSuccess__message {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.orderSuccess__orderID {
+    color: #333;
+    font-size: 14px;
+}
+
+.btn-success {
+    background-color: #e14646!important;
+    border-color: #e14646;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #ee4545!important;
+    border-color: #ee4545!important;
+}
+/* Done */
+.button__applyCoupon{
+    background-color: #e14646!important;
+}
+.button__applyCoupon:hover{
+    background-color: #ee4545!important;
+}
+.apply__couponTitle{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 16px;
+    color:#242323;
+}
+.coupon__codeInput{
+    font-size: 14px;
+    color: #747171;
+    padding: 8px!important;
+}
+.payment__options {
+    background-color: #edf1f8; /* Background color for the payment options section */
+    border-radius: 8px;
+}
+
+.payment__option {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Default background */
+}
+.payment__options h5 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 22px!important;
+    color: #242323;
+}
+.payment__option:hover {
+    background-color: #ccc; /* Slight hover effect */
+}
+
+.payment__option input[type="radio"]:checked ~ label {
+    background-color: #fff; /* Highlighted background for selected option */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.payment__icon {
+    width: 30px;
+    height: 30px;
+}
+.payment__optionText{
+    font-weight: 600;
+    font-size: 15px;
+    color: #454141;
+}
+.form-check-input {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+/* NEWLY ADDED PRODUCT DETAILS SECTION  */
+
+.section__fillGap{
+    padding-top: 118px;
+}
+.section__fillGap__cart{
+    padding-top: 58px;
+}
+
+.cart__iconMobileView{
+    margin: 0 8px;
+}
+.cart__iconMobileView{
+    font-size: 18px;
+    color: #242121;
+    margin-right:9px;
+}
+.heart__iconMobileView{
+    font-size: 18px;
+    margin-right: -0px;
+    color: #242121;
+}
+.person__iconMobileView{
+    font-size: 21px;
+    color: #242121;
+}
+.button__cart{
+    border: none;
+    background-color: transparent;
+}
+
+
+/* NEWLY ADDED CSS  */
+.details__productDescription{
+    background-color: #f9f9f9;
+    padding: 20px;
+    padding-right: 60px;
+    border-radius: 2px;
+    margin-left: -30px;
+    margin-bottom: 50px;
+}
+.details__productDescription h5{
+    font-family:"Roboto-slab";
+    font-size: 26px;
+    color: #242121;
+    margin-bottom:20px
+}
+
+
+.product__detailsText{
+    font-size: 14px;
+    color: #6c757d;
+}
+.details__productDescription span{
+    font-size: 14px;
+    color: #2c2f31;
+    font-weight: 600;
+}
+
+
+/* REVIEW AND RATING  */
+
+/* Star rating style */
+.star-rating {
+    display: inline-block;
+    direction: rtl;
+  }
+  
+  .star {
+    font-size: 22px;
+    color: #ffd700;
+    cursor: pointer;
+  }
+  
+  .star-rating .star:hover,
+  .star-rating .star:hover ~ .star {
+    color: #ffd700; /* Gold color on hover */
+  }
+  
+  .star-rating .star.selected {
+    color: #ffd700; /* Selected stars will stay gold */
+  }
+  
+  /* Review text */
+  .review__text {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .review__date {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* User profile icon */
+  .user-pf-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  /* Helpful button */
+  .helpful-btn {
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .helpful-btn i {
+    margin-right: 5px;
+  }
+  
+  .rating-count {
+    font-size: 18px;
+    font-weight: 600;
+    color: #d56363;
+    display: inline-block;
+  }
+  
+  .add__review textarea {
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  .reviews__section h5{
+    font-family:"Roboto-slab";
+    font-size: 26px;
+    color: #242121;
+    margin-bottom:20px
+  }
+
+  .review__user{
+    font-weight: 600;
+  }
+  .add__review h6{
+    font-size: 20px;
+    color: #242121;
+    font-weight: 600;
+
+  }
+  .rating__stars{
+    border: 1px solid #dadcde;
+    display: inline-block;
+    padding: 3px 20px;
+    border-radius: 10px;
+  }
+  .no__ofReviews{
+    font-size: 18px;
+    font-weight: 600;
+    color: #242121;
+    margin-left: 5px;
+  }
+  /* Button style */
+  button {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+
+  .reviews__section{
+    margin-left: -20px;
+  }
+
+  .button__submitReview{
+    padding: 9px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #ef5b5b;
+    border: none;
+    color: #fff;
+  }
+  .button__submitReview:hover{
+    background-color: #ee5252;
+  }
+  
+/*--------------------------------------------------------------
+# SEARCH BOX CSS
+--------------------------------------------------------------*/
+
+.search-container {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-left: 50px;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding: 10px 30px 10px 20px; /* Space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #d75656; /* Focus border color */
+    box-shadow: 0 0 5px rgba(239, 107, 81, 0.5); /* Optional focus shadow */
+  }
+  
+  .search-input:hover {
+    border-color: #d75656; /* Hover border color */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc; /* Default icon color */
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .search-input:focus + .search-icon {
+    color: #d75656; /* Icon color when focused */
+  }
+  
+  .search-input:hover + .search-icon {
+    color: #d75656; /* Icon color on hover */
+  }
+  
+
+  .search-container-two {
+    position: relative;
+    display: none;
+    width: 100%;
+    max-width: 400px; /* Optional, sets a max-width for the search box */
+  }
+  
+  .search-input-two {
+    width: 100%;
+    padding: 12px 25px 12px 35px; /* Space for the icon */
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f7f7f7; /* Light background */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .search-input-two:focus {
+    border-color: #9a9d9b; /* Focus border color */
+    background-color: #ffffff; /* White background on focus */
+  }
+  
+  .search-input-two:hover {
+    border-color: #9a9d9b; /* Hover border color */
+  }
+  
+  .search-icon-two {
+    position: absolute;
+    left: 15px;
+    top: 80%;
+    transform: translateY(-50%);
+    color: #aaa; /* Default icon color */
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .search-input-two:focus + .search-icon-two {
+    color: #28a745; /* Icon color on focus */
+  }
+  
+  .search-input-two:hover + .search-icon-two {
+    color: #28a745; /* Icon color on hover */
+  }
+  
+/*--------------------------------------------------------------
+# Login CSS
+--------------------------------------------------------------*/
+
+.login__container{
+  margin: 70px 0;
+}
+
+.login__containerLeft h5{
+    font-family: "Roboto Slab", serif;
+    color: rgb(65, 63, 63);
+}
+
+.login__containerLeft p{
+    font-family: "Roboto Slab", serif;
+    color: rgb(86, 84, 84);
+}
+
+.login__icons{
+    width: 60px;
+    height: 60px;
+}
+.loginLeft__boxes{
+    margin-top: 35px;
+}
+.loginLeft__boxes p{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(86, 84, 84);
+}
+.login__containerRight h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    text-align: left;
+}
+.login__containerRight p{
+    font-size: 13.5px;
+    color: rgb(80, 79, 77);
+    text-align: left;
+    margin-bottom: 20px;
+}
+.login__button{
+    width: 100%;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c23838;
+    color: #fff;
+    font-weight: 600;
+}
+.login__button:hover{
+    background-color: #8c2121;
+}
+.floating__inputField{
+    border: 1px solid #d3d3d3;
+    font-weight: 600;
+}
+.floating__inputField:focus{
+    border: 1px solid #242323;
+}
+.floating__titleLogin{
+    font-size: 13px;
+    color: rgb(107, 108, 110);
+}
+.breadcrumb__home{
+    color: rgb(107, 108, 110);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2.5px;
+}
+.active__breadcrumb{
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+/*--------------------------------------------------------------
+# COUPON MODAL CSS
+--------------------------------------------------------------*/
+
+.coupon-input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Adjust spacing if needed */
+}
+
+.coupon-input-group input {
+    flex: 1; /* Make the input take up the remaining width */
+    border-radius: 4px 0 0 4px; /* Rounded corners for the input */
+    border: 1px solid #ccc; /* Consistent border */
+    padding: 10px; /* Space inside the input */
+}
+
+.coupon-input-group button {
+    border-radius: 0 4px 4px 0; /* Rounded corners for the button */
+    padding: 10px 20px; /* Adjust padding for a balanced look */
+    border: 1px solid #e14646; /* Match primary color */
+    background-color: #e14646; /* Primary color for the button */
+    color: white; /* Text color for contrast */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.coupon-input-group button:hover {
+    background-color: #c53636; /* Darker shade on hover */
+    border-color: #c53636;
+}
+
+.coupon__signIn{
+    background-color: #f4dede;
+    border: none;
+    font-size: 12px;
+    color: #363232;
+    padding: 10px;
+    font-weight: 600;
+}
+.coupon-input-group ::placeholder{
+    font-size: 14px;
+    font-weight: 600;
+}
+.apply__button{
+    border-radius: 10px;
+}
+.apply__button:hover{
+    color: #fff;
+    background-color: #c53636;
+}
+.coupons__title{
+    font-family: "Roboto Slab", serif;
+    color: #242323;
+}
+.coupon__availInstruction{
+    font-size: 13px;
+    margin-top: -10px;
+    color: #625f5f;
+}
+.breadcumb__section{
+    font-size: 10px;
+}
+/*--------------------------------------------------------------
+# CART CSS
+--------------------------------------------------------------*/
+
+.cart__container {
+    padding: 20px;
+}
+.cart__container .card {
+    border-radius: 0px;
+}
+.cart__authorName{
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: -2px;
+}
+.cart__bookName{
+    font-size: 16px;
+    color: #242323;
+    font-weight: 600;
+}
+.cart__wrapper{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.cart-item {
+    position: relative;
+    border: none;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.cart-item:not(:last-child) {
+    border-bottom: 1px dashed #ddd; /* Dashed line between cart items */
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+
+.cartSale__price {
+    color: #242323;
+    font-size: 1.01rem;
+    font-weight: 600;
+}
+.quantity__box{
+    margin-bottom: 20px;
+}
+.cartRegular__price {
+    color: #6c757d;
+    text-decoration: line-through;
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.qty__text{
+    font-size: 14px;
+    font-weight: 600
+}
+.cartButton__decrement{
+    border: 1px solid #ddd;
+}
+.inc__button__icon{
+    font-size: 15px!important;
+}
+.cartButton__increment{
+    border: 1px solid #e14646;
+    background-color: #e14646;
+    color: white;
+    border-radius: 10px;
+}
+.cart__mainDiscount {
+    color: #36b957;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+.remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.remove-button button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #e14646;
+}
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.qty__amount{
+    border: none;
+    font-weight: 600;
+    width: 40px;
+}
+.quantity-input:focus {
+    border-color: #e14646; /* Highlight border on focus */
+}
+
+.btn-outline-secondary {
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.chevron__right{
+    width: 20px;
+    height: 20px;
+}
+.coupon__icon{
+    width: 32px;
+    height: 29px;
+}
+.apply__couponText{
+    font-size: 15px;
+    font-weight: 600;
+    color: #242323;
+    margin-left: 10px;
+}
+.btn-outline-secondary:hover {
+    border-color: #dedede;
+    color: #fff;
+}
+.cart__productImage{
+    height: 168px;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+.coupon__boxCart{
+    border: 1px dashed #ddd;
+    padding-top: 10px;
+    padding-left:12px;
+    padding-right:12px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Make sure the price details container takes full height */
+.price-details {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px; /* Make space for the fixed button */
+}
+.price__detailsText{
+    font-size: 17px;
+    padding-top: 14px;
+    border-top: 1px dotted #ddd;
+    font-weight: 600;
+    color: #242323;
+}
+.mrp__priceDiscount{
+    font-weight: 600;
+    color: #4db267;
+}
+.savedPrice{
+    background-color: rgba(250, 194, 65,0.5);
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.mrp__text{
+    font-size: 15px;
+    color: #6c757d;
+}
+.mrp__price{
+    font-weight: 600;
+}
+.cannot__note{
+    font-size: 12px;
+    color: #6c757d;;
+    margin-top: -11px;
+}
+.payment__button{
+    width: 100%!important;
+    background-color: #e14646;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: none;
+    border-radius:10px;
+    color: #f5efef!important;
+}
+.payment__buttonText{
+    color: #f5efef!important;
+}
+.payment__buttonText:hover{
+    color: #f5efef!important;
+}
+.payment__button:hover{
+    width: 100%;
+    color: #f5efef!important;
+    background-color: #ed5656;
+}
+
+.productDetails__productName{
+    font-family: "Roboto Slab", serif;
+    color: #242323;
+    font-size: 28px;
+}
+.productDetails__author{
+    font-size: 14px;
+    color: #898282;
+}
+.productDetails__description{
+    font-size: 14.2px;
+    color: #6f6b6b;
+    line-height: 24px;
+}
+.productDetails__codinfo{
+    font-size: 12.5px;
+    color: #898282;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+}
+.author__aboutHeadline{
+    font-family: "Roboto Slab", serif;
+    color: #242323;
+    font-size: 28px;
+}
+/* Ensure no global bleeding */
+.product__description__authorContainer .nav-pills {
+    margin-bottom: 20px;
+    padding-left: 0;
+    border-radius: 5px;
+    background-color: transparent; /* Transparent background for the container */
+}
+
+.product__description__authorContainer .nav-item {
+    border-radius: 5px; /* Rounded corners for individual pills */
+}
+
+.product__description__authorContainer .nav-link {
+    font-size: 14px;
+    color: #6c757d; /* Gray color for inactive tabs */
+    font-weight: normal; /* Normal weight for inactive tabs */
+    border: none; /* Remove default border */
+    border-bottom: 3px solid transparent; /* Ensure no border by default */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Active tab: 10px bottom border, orange-red color, bold text */
+.product__description__authorContainer .nav-link.active {
+    background-color: transparent; /* Remove background color on active */
+    color: #6c757d; /* Orange-red text color for active */
+    font-weight: bold;
+    border-radius: 0px; /* Bold text for active */
+    border-bottom: 2px solid orangered; /* 10px wide bottom border for active tab */
+}
+.product__description__pillsDesc{
+    font-size: 14.2px;
+    color: #6f6b6b;
+    line-height: 24px;
+}
+.product__description__pillsAuthor{
+    font-weight: 600;
+}
+.inc__tax{
+    font-size: 12px!important;
+}
+/* Hover effect for inactive tabs */
+.product__description__authorContainer .nav-link:hover {
+    color: orangered; /* Change text color on hover */
+}
+
+/* Ensuring spacing between nav items */
+.product__description__authorContainer .nav-item + .nav-item {
+    margin-left: 10px; /* Space between items */
+}
+
+
+/* NEWLY ADDED POSITION CSS */
+
+.pincode__inputWrapper {
+    position: relative;
+    /* width: 410px; */
+    width:100%;
+}
+
+.pincode__inputBox {
+    width: 100%;
+    padding: 10px 80px 10px 15px; /* Space for button on the right */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.pincode__inputBox:focus {
+    border-color: #96999c;
+    box-shadow: 0 0 5px rgba(208, 209, 210, 0.5);
+}
+.pincode__textDeliveryTime{
+    font-size: 13px;
+    color: #7f7f7f;
+    margin-top: 6px;
+}
+
+.pincode__button {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: #93b4d8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pincode__button:hover {
+    background-color: #6fa0d1;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    /* Ensure the main content can scroll and leave space for the button */
+    .main {
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; Make the main content take full height of the screen */
+    }
+
+    /* Right side container should grow and be scrollable */
+    .price-details {
+        flex-grow: 1;
+        overflow-y: auto; /* Allow scrolling of content */
+    }
+
+    /* Fix the Proceed to Payment button at the bottom */
+    .price-details .btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-size: 16px;
+        z-index: 10; /* Ensure it's above other content */
+    }
+    /* NEW ARRIVALS SECTION  */
+.newArrivals__home{
+    margin-top: -40px;
+}
+.bestSellers__home{
+    margin-top: -35px;
+}
+}
+
+/* For larger screens, no need to fix the button */
+@media (min-width: 769px) {
+    .price-details .btn {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .login__containerLeft h5{
+        display: none;
+    }
+    .custom-container {
+        margin: auto;
+        max-width: 1580px;
+        width: 100%;
+        padding-top: 10px;
+
+    }
+    .footer__bottomTwo__box h5 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 10px;
+    }
+    .footer__bottomTwo__boxTwo h5{
+        font-size: 16px;
+        margin-bottom: 15px;
+        color:#444;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+      .footer__bottomTwo__firstBox h4 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .bottom_subHeading {
+        font-size: 14px;
+        color: #444;
+    }
+    .login__containerLeft p{
+        display: none;
+    }
+    .loginLeft__boxes{
+        display: none;
+    }
+
+    .cart__bookName {
+        font-size: 14px;
+    }
+
+    .remove-button {
+        position: absolute;
+        top: 0px;
+        color: #242323;
+        right: -10px;
+    }
+    .qty__text{
+        display: none;
+    }
+
+    .search-container{
+        display: none;
+    }
+    .search-container-two{
+        display: block;
+        max-width: 100%;
+        position: fixed;
+        margin: auto;
+        padding-top: 128px;
+        background: white;
+        z-index: 100;
+        
+    }
+    .search-input-two {
+        width: 95.5%;
+        padding: 8px 18px 8px 20px; /* Space for the icon */
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        font-size: 12px;
+        margin-left: 10px;
+        padding-left: 29px;
+        outline: none;
+        background-color: #f7f7f7; /* Light background */
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+      }
+
+      .fixed-top {
+        position: fixed!important;
+        top: 30!important;
+        right: 0!important;
+        left: 0!important;
+        z-index: 1030!important;
+    }
+    
+
+      .navbar__button{
+        display: none;
+      }
+
+      .details__productDescription{
+        margin-left: 0px;
+    }
+    .reviews__section {
+        margin-left: 8px;
+    }
+
+    .productDetails__image{
+       margin-top: -90px;
+       margin-bottom: 20px;
+    }
+    .productDetails__productName {
+        font-size: 24px;
+        
+    }
+    .author__aboutHeadline {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    .details__productDescription h5 {
+        font-size: 24px;
+    }
+    .reviews__section h5 {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+    .section__fillGap__cart{
+        padding-top: 78px;
+    }
+    .logo__loginPage{
+        margin-left:0!important;
+    }
+    .payment__optionText {
+    font-weight: 600;
+    font-size: 13px;
+    color: #454141;
+}
+.mrp__text {
+    font-size: 14px;
+    color: #6c757d;
+}
+.clients h3 {
+    font-size:18px; 
+    margin-top: -10px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.title__ofHomepage {
+    font-size:18px; 
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.contact .contact-form p {
+    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+.contact .info-box p {
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+.contact .info-item .content h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #242121;
+}
+.contact .info-item .content p {
+    margin-bottom: 0.25rem;
+    font-size: 0.81rem;
+}
+.contact .info-item .icon-box i {
+    font-size: 1rem;
+    color: #2b2a2a;
+}
+.contact .info-item .icon-box {
+    width: 3rem;
+    height: 3rem;
+}
+.contact .contact-form h3 {
+    font-size: 1.20rem;
+    font-weight: 600;
+}
+.contact .contact-form .btn {
+    background-color: #e14646;
+    color: var(--contrast-color);
+    padding: 0.7rem 2.5rem;
+    border-radius: 0.1rem;
+    display: inline-flex;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.signIn__topbarText{
+    display: none;
+}
+.user__icon{
+    width: 22px;
+    height: 22px;
+    margin-bottom: 9px;
+    margin-left: -10px;
+    display: inline-block;
+}
+.topbarNav__right{
+    margin-right: -15px;
+    margin-top: 4px;
+}
+
+.prev__nextButton{
+    display: none!important;
+}
+}

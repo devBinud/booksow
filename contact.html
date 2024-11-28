@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Booksaw | Home</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicons.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom-style.css" rel="stylesheet">
+  <link href="assets/css/navbar.css" rel="stylesheet">
+  <link href="assets/css/wishlist.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <div class="topbar">
+    <div class="container" style="max-width: 1200px; width: 100%; padding: 0 15px;">
+      <h4 class="text-neutral-100 text-center m-0">
+        Use code <span class="fw-bold">COUPON50</span> and get an offer on your purchase!
+      </h4>
+    </div>
+  </div>
+
+  <div class="topbar__two">
+    <div class="container-fluid" style="max-width: 1568px; width: 100%;">
+      <div class="topbar__navLinks">
+        <div class="topbarNav__left">
+          <a class="topNavbar__leftLinks" href="">Bestsellers</a>
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+            class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">New Arrivals</a>
+          <a class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">Artificial Intelligence</a>
+          <a class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">Influencers Picks</a>
+        </div>
+        <!-- <div class="topbarNav__left__inMobile">
+          <p>Add Pincode</p>
+        </div> -->
+        <div class="topbarNav__right">
+          <a href="wishlist.html" class="wishlist__topbar">
+            <img class="topbar__navImage" src="assets/img/icons/heart.png" alt="">
+            <span class="wishlist__topbarText">Wishlist</span></a>
+
+          <a href="cart.html" class="cart__topbarr">
+            <button type="button" class="btn-sm position-relative button__cart">
+              <i class="bi bi-cart cart__iconMobileView"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin-left: -13px;
+  margin-top: 3px;font-size: 11px;">
+                4
+              </span>
+            </button>
+            <span class="cart__topbarText">Cart</span>
+          </a>
+
+          <a href="profile.html" class="signIn__topbar">
+            <span class="signIn__topbarText">Sign In</span>
+            <span><img class="user__icon" src="assets/img/icons/user.png" alt=""></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="custom-container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center mr-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/main-logo.png" alt="logo">
+
+        <!-- <h1 class="sitename">Booksaw</h1> -->
+      </a>
+
+      <div class="search-container position-relative" style="width: 40%;">
+        <!-- Search Input -->
+        <div class="d-flex border-1 align-items-center px-2 searchBox__wrapper">
+          <i class="bi bi-search searchIcon__home"></i>
+          <input style="border: none;" id="searchInput" data-bs-toggle="dropdown" aria-expanded="false" type="search"
+            class="form-control shadow-none" placeholder="Search books, authors, Publishers, ISBN No...">
+
+          <!-- Dropdown for Suggestions -->
+          <ul class="dropdown-menu" aria-labelledby="searchInput">
+            <li><a class="dropdown-item" href="#">To Kill a Mockingbird</a></li>
+            <li><a class="dropdown-item" href="#">World Best Ex-Girlfriend</a></li>
+            <li><a class="dropdown-item" href="#">The Great Gatsby</a></li>
+            <li><a class="dropdown-item" href="#">The Catcher in the Rye</a></li>
+            <li><a class="dropdown-item" href="#">Pride and Prejudice</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="listing-dropdown"><a href="#"><span>Fiction</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li>
+                <a href="#">Column 1 link 1</a>
+                <a href="#">Column 1 link 2</a>
+                <a href="#">Column 1 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 2 link 1</a>
+                <a href="#">Column 2 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 3 link 1</a>
+                <a href="#">Column 3 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 4 link 1</a>
+                <a href="#">Column 4 link 2</a>
+                <a href="#">Column 4 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 5 link 1</a>
+                <a href="#">Column 5 link 2</a>
+                <a href="#">Column 5 link 3</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="offers.html" class="navbar__offersLinks">Offers</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="margin-top: -14px;"></i>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="search-container-two">
+    <i class="search-icon-two bi bi-search"></i> <!-- Using FontAwesome icon -->
+    <input type="search" class="search-input-two form-control shadow-none"
+      placeholder="Search books, authors, Publishers, ISBN No..." id="searchBox" data-bs-toggle="dropdown"
+      aria-expanded="false">
+    <!-- Dropdown for Suggestions -->
+    <ul class="dropdown-menu" aria-labelledby="searchBox">
+      <li><a class="dropdown-item" href="#">To Kill a Mockingbird</a></li>
+      <li><a class="dropdown-item" href="#">World Best Ex-Girlfriend</a></li>
+      <li><a class="dropdown-item" href="#">The Great Gatsby</a></li>
+      <li><a class="dropdown-item" href="#">The Catcher in the Rye</a></li>
+      <li><a class="dropdown-item" href="#">Pride and Prejudice</a></li>
+    </ul>
+  </div>
+
+
+  <main class="main">
+
+     <!-- Contact Section -->
+     <section id="contact" class="contact section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title mt-5" data-aos="fade-up">
+          
+        </div><!-- End Section Title -->
+  
+        <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+              <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                <h3>Contact Info</h3>
+                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+  
+                <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Our Location</h4>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                  </div>
+                </div>
+  
+                <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Phone Number</h4>
+                    <p>+1 5589 55488 55</p>
+                    <p>+1 6678 254445 41</p>
+                  </div>
+                </div>
+  
+                <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Email Address</h4>
+                    <p>info@example.com</p>
+                    <p>contact@example.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-7">
+              <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                <h3>Get In Touch</h3>
+                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+  
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+  
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+  
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+  
+                    <div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+  
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+  
+                    <div class="col-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+  
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+  
+                  </div>
+                </form>
+  
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Contact Section -->
+     
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+
+        <div class="col-lg-2 col-6 col-md-3 footer-links">
+          <h4>Top Genre</h4>
+          <ul>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Non Fiction</a></li>
+            <li><a href="#">Children</a></li>
+            <li><a href="#">Young and Adults</a></li>
+            <li><a href="#">Comics & Graphic Novels</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">BestSellers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">New Educations</a></li>
+            <li><a href="#">Top Webiners</a></li>
+            <li><a href="#">Artificial Intelligence</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 col-md-3 footer-links">
+          <h4>Help & Support</h4>
+          <ul>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Copyright Policy</a></li>
+            <li><a href="#">Return and Refund</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
+          <h4>Top Publishers</h4>
+          <ul>
+            <li><a href="#">Penguin Random House</a></li>
+            <li><a href="#">Manjul Publishing House Pvt Ltd</a></li>
+            <li><a href="#">Oswaal Books And Learning Pvt Ltd</a></li>
+            <li><a href="#">Notion Press</a></li>
+            <li><a href="#">Arihant Publication India</a></li>
+            <li><a href="#">Assam Publications</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>CONNECT WITH US</h4>
+          <div class="footer__paraBox">
+            <p class="footer-paragraph">
+              Address : Bonda , Near Bonda Bazar, Narengi<br>Guwahati, Assam 781026
+            </p>
+            <p class="footer-paragraph">Tell No : +9197082-96117 / 91234-32900</p>
+            <p class="footer-paragraph" style="margin-top: -11px;">Email : booksaw.support@gmail.com</p>
+          </div>
+          <div class="social-links mt-3">
+            <a href="#" class="social_singleLinks"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social_singleLinks"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social_singleLinks"><i class="  bi bi-youtube"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container copyright text-center mt-4">
+      <div class="credits">
+        <p class="creditss">Designed and Developed by <a href="https://noobcodeacademy.in/">Noob Code Academy</a></p>
+        <p class="copyRightt">Copyright © 2024 by Booksaw India</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom__two">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8">
+            <div class="footer__bottomTwo__firstBox">
+              <h4>Booksaw.com - Buy Books Online at Best Prices in India</h4>
+              <p>Booksaw.com offers you over a million titles across genres like Fiction, Non-fiction, Crime, Thriller,
+                Comics and more, and across categories like Children’s Books, Young Adults, Academic Books and
+                Textbooks,
+                Graphic Novels, Manga, Indian Writing, Classics and more.
+                If reading is your passion or pastime, head over to Bookscape to browse through a massive selection of
+                titles in multiple languages as well. From new releases, bestsellers to curated editor’s picks, there is
+                something for everyone.
+                Students can take their pick from exam prep books, university textbooks and references, school textbooks
+                and guides. Young teenagers will find fiction and fantasy books from the Young Adults section
+                interesting.
+                Lovers of true crime, suspense and horror stories would find the Crime, Mystery & Thrillers section of
+                the
+                site an absolute delight.
+                Browse by genre when you buy books online at Booksaw.com that makes it very convenient to choose a book
+                to
+                curl up with. We understand that every reader is different and believe in suggesting the right book to
+                the
+                right reader.</p>
+              <h4>Advantages of Buying Books Online at Booksaw.com</h4>
+              <p>Bookscape is a booklover’s haven created for the love of books and the book community consisting of
+                authors, publishers and readers. Here are some major advantages of buying books online at our site:</p>
+              <h5 class="bottom_subHeading">Choices galore</h5>
+              <p class="bottom_paragraph">Bookscape has a dynamic catalogue that keeps growing with new titles and
+                publishers being added constantly. To date, we have over a million titles from 700+ publishers and we’re
+                always adding more to the mix. We have books to suit every interest, preference and mood be it romance,
+                self-improvement, leadership tips, exam prep, comedy, art, history, religion and so on.</p>
+
+              <h5 class="bottom_subHeading">Genuine Books</h5>
+              <p class="bottom_paragraph">Bookscape works directly with publishers to offer the best quality, latest
+                books
+                that do not support piracy and other unethical practices. Every one of our books is 100% genuine and
+                freshly minted before being sent off to you.</p>
+
+              <h5 class="bottom_subHeading">Competitive Pricing</h5>
+              <p class="bottom_paragraph">Prices on Bookscape are regularly matched with prices of other retailers so
+                you
+                will always get any book you want for the best price.</p>
+
+              <h5 class="bottom_subHeading">Hot pre-orders</h5>
+              <p class="bottom_paragraph">When you shop for books online, you can always find the new releases and
+                pre-order before its official release. You can easily stay updated on new arrivals while browsing
+                Bookscape.com and get it delivered to your doorstep right upon release. Not only this, but you will also
+                be able to read the book descriptions of new books without spoilers so can decide if this is a book you
+                want to pick up.</p>
+
+              <h5 class="bottom_subHeading">Books in a Blink Feature</h5>
+              <p class="bottom_paragraph">You can use the Book in a Blink feature that gives you a summary of the book
+                without revealing any spoilers. Just like reading the synopsis like you would in a brick-and-mortar
+                bookstore. This feature is a great way to discover and recommend books that allow you to read a rich
+                snippet of just about any book on this platform.</p>
+
+
+              <h5 class="bottom_subHeading">Multiple langauges and formats</h5>
+              <p class="bottom_paragraph">Books available in a plethora of formats so you can find hardcovers,
+                paperbacks
+                and board books to suit different tastes. A classic hardcover may be a sturdy and beautiful option if
+                you
+                wish to gift books as collectibles that will also withstand the test of time. Choosing a thick-cover
+                board
+                book as a gift for a young child who loves to chomp and tear. Similarly, we offer Indian writing in
+                English but we also have a large collection of regional books in Hindi, Marathi, Bengali, Tamil,
+                Gujarati
+                and more: Do you need any more convincing to give us a try? Shop online at Bookscape.com today to find a
+                storybook for children, study guides for medical, FAQs or engineering or FAQs or legal, and FAQs or exam
+                prep books for various government exams.</p>
+
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer__bottomTwo__box">
+              <h5>Best Selling Books of All Time</h5>
+              <p>Book sales have been impacted for a while now due to digital downloads and e-books that are easier to
+                access. However, the good old paper book is not to be completely kept aside as the demand for books is
+                still strong for those who love reading and wish to inculcate this habit in their children and loved
+                ones.
+              </p>
+
+              <ul>
+                <li><a href="#">The God of Small Things by Arundhati Roy</a></li>
+                <li><a href="#">Ikigai: The Japanese Secret to a Long and Happy Life by Francesc Miralles and Hector
+                    Garcia</a></li>
+                <li><a href="#">Harry Potter and the Philosopher’s Stone by J.K. Rowling
+                  </a></li>
+                <li><a href="#">
+                    How to Win Friends and Influence People by Dale Carnegie
+                  </a></li>
+                <li><a href="#">Life’s Amazing Secrets by Gaur Gopal Das</a></li>
+                <li><a href="#">Think and Grow Rich by Napoleon Hill</a></li>
+              </ul>
+            </div>
+            <div class="footer__bottomTwo__boxTwo">
+              <h5>All Time Best Selling Books Genre</h5>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Fiction Books</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Non-Fiction Books</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Graphic novels and Comics</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Self-Help Books</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">School Books</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Literature Books</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Higher Education Books</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="footer__miniBox">
+                    <a href="#" class="footer__anchor">Young & Adult Books</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+  </html>

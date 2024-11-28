@@ -1,0 +1,344 @@
+
+
+/* Scoped styles for the search container */
+.search-container {
+    position: relative;
+    width: 40%;
+  }
+  
+  /* Dropdown menu adjustments */
+.search-container .dropdown-menu.show {
+    position: absolute;
+    inset: 0 auto auto 0; /* Ensures it stays within bounds */
+    margin: 0; /* Reset any margin */
+    transform: translate(1px, 44px)!important; /* Custom translation */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 9999; /* Ensure the dropdown stays above other elements */
+  }
+  
+  /* Input Field Styling */
+  .search-container #searchInput {
+    background-color: transparent; /* Transparent background for the input */
+    border: none; /* Remove border */
+    outline: none; /* Remove focus outline */
+    font-size: 14px; /* Adjust font size */
+    padding-left: 35px; /* Add padding on the left for the search icon */
+    width: 100%; /* Make the input span the full width */
+  }
+  .search-input-two .form-control:focus{
+    outline: none;
+    border:none;
+    box-shadow: none;
+  }
+  /* Search Icon Styling */
+  .search-container .searchIcon__home {
+    font-size: 20px; /* Icon size */
+    color: #888; /* Gray color for the icon */
+    position: absolute;
+    left: 10px; /* Position icon inside the input box */
+    pointer-events: none; /* Ensure the icon does not block input */
+  }
+  
+  /* Dropdown Menu Styling */
+  .search-container .dropdown-menu {
+    width: 100%; /* Ensure the dropdown matches the input width */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+    background-color: #ffffff; /* White background */
+    max-height: 300px; /* Max height for dropdown */
+    overflow-y: auto; /* Scrollable if needed */
+    z-index: 9999; /* Ensure dropdown stays above other content */
+  }
+
+    /* Dropdown Menu Styling */
+    .search-container-two .dropdown-menu {
+        width: 96%; /* Ensure the dropdown matches the input width */
+        border-radius: 2px; /* Rounded corners */
+        border: 1px solid #ddd; /* Light border */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+        background-color: #ffffff; /* White background */
+        max-height: 300px; /* Max height for dropdown */
+        overflow-y: auto; /* Scrollable if needed */
+        z-index: 9999; /* Ensure dropdown stays above other content */
+      }
+      .search-icon-two{
+        margin-left: 2px;
+      }
+  
+  /* Dropdown Item Styling */
+  .search-container .dropdown-item {
+    padding: 12px 15px; /* Comfortable padding */
+    font-size: 14px; /* Consistent font size */
+    color: #333; /* Dark text color for better readability */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  .search-container-two .dropdown-item {
+    padding: 7px 15px; /* Comfortable padding */
+    font-size: 12px; /* Consistent font size */
+    color: #333; /* Dark text color for better readability */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  /* Hover Effect for Dropdown Items */
+  .search-container .dropdown-item:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Active State for Dropdown Items */
+  .search-container .dropdown-item:active {
+    background-color: #e1e1e1; /* Slightly darker on active click */
+  }
+  
+.suggestion-box {
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-left: -50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+  }
+  
+  .suggestion-box li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion-box li:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+/* General Styles */
+    .productDetails__image {
+        text-align: center;
+    }
+
+    .product__image img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Carousel Image Styles */
+    .product-image {
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Active Carousel Image Styles */
+    .product-image.active {
+        box-shadow: 0px 4px 10px rgba(255, 87, 51, 0.5);
+        border: 2px solid #ff5733; /* Highlight border */
+    }
+
+    /* Carousel Controls */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #ff5733;
+        border-radius: 50%;
+        padding: 10px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .carousel-control-prev-icon{
+        margin-left: -40px;
+    }
+    .carousel-control-next-icon{
+        margin-left: 40px;
+    }
+
+.clear__allText{
+    color: #a19d9d;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.filter__text{
+    font-family:"Roboto-slab";
+    color: #373535;
+    font-size: 24px;
+}
+.filter__resultProducts{
+    color: #a19d9d;
+    font-size: 13px;
+    
+}
+.wishlist__wrapper .card{
+    padding: 4px 7px 8px;
+}
+.wishlist__wrapper .card-body{
+    margin-left: 0px;
+}
+.wishlist__wrapper .card-title{
+    color: #373535;
+}
+.wishlist__wrapper .card-title:hover{
+    color: #0c0c0c;
+}
+/* Accordion Styling */
+.accordion {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background-color: #fff;
+}
+
+.accordion-button {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    color: #373535;
+    border: none;
+    font-size: 14px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    background-color: #fff;
+}
+
+.accordion-body {
+    padding: 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.accordion-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-body li {
+    margin-bottom: 10px;
+}
+
+.accordion-body input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.accordion-body label {
+    cursor: pointer;
+    color: #333;
+}
+
+/* Custom Checkbox Styling */
+.accordion-body input[type="checkbox"]:checked {
+    accent-color: #007bff; /* Use primary theme color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .accordion-body li {
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Styling for the search input */
+#searchInput {
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder Styling */
+#searchInput::placeholder {
+  color: #969595; /* Light gray color for the placeholder */
+  font-style: normal;
+  font-size: 13px;
+}
+.searchBox__wrapper{
+
+    border: 1px solid #ccc!important;
+    border-radius: 5px;
+}
+.searchIcon__home{
+    font-size: 23px;
+    padding-left: 5px!important;
+}
+
+  /* CAROUSEL HERO SECTION  */
+  .chevron__back{
+    background-color: #f1f1f1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chevron__next{
+    background-color: #f1f1f1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bi-chevron-right{
+    font-size: 18px;
+  }
+  .bi-chevron-left{
+    font-size: 18px;
+  }
+
+  @media screen and (max-width:576px){
+    .chevron__back{
+        background-color: #f1f1f1;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chevron__next{
+        background-color: #f1f1f1;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  }

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Booksaw | Shopping Cart</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicons.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/navbar.css" rel="stylesheet">
+    <link href="assets/css/custom-style.css" rel="stylesheet">
+    <link href="assets/css/wishlist.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <div class="topbar">
+    <div class="container" style="max-width: 1200px; width: 100%; padding: 0 15px;">
+      <h4 class="text-neutral-100 text-center m-0">
+        Use code <span class="fw-bold">COUPON50</span> and get an offer on your purchase!
+      </h4>
+    </div>
+  </div>
+
+  <div class="topbar__two">
+    <div class="container-fluid" style="max-width: 1568px; width: 100%;">
+      <div class="topbar__navLinks">
+        <div class="topbarNav__left">
+          <a class="topNavbar__leftLinks" href="">Bestsellers</a>
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+            class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">New Arrivals</a>
+          <a class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">Artificial Intelligence</a>
+          <a class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">Influencers Picks</a>
+        </div>
+        <!-- <div class="topbarNav__left__inMobile">
+          <p>Add Pincode</p>
+        </div> -->
+        <div class="topbarNav__right">
+          <a href="wishlist.html" class="wishlist__topbar">
+            <img class="topbar__navImage" src="assets/img/icons/heart.png" alt="">
+            <span class="wishlist__topbarText">Wishlist</span></a>
+
+          <a href="cart.html" class="cart__topbarr">
+            <button type="button" class="btn-sm position-relative button__cart">
+              <i class="bi bi-cart cart__iconMobileView"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin-left: -13px;
+  margin-top: 3px;font-size: 11px;">
+                4
+              </span>
+            </button>
+            <span class="cart__topbarText">Cart</span>
+          </a>
+
+          <a href="profile.html" class="signIn__topbar">
+            <span class="signIn__topbarText">Sign In</span>
+            <span><img class="user__icon" src="assets/img/icons/user.png" alt=""></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="custom-container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center mr-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/main-logo.png" alt="logo">
+
+        <!-- <h1 class="sitename">Booksaw</h1> -->
+      </a>
+
+      <div class="search-container position-relative" style="width: 40%;">
+        <!-- Search Input -->
+        <div class="d-flex border-1 align-items-center px-2 searchBox__wrapper">
+          <i class="bi bi-search searchIcon__home"></i>
+          <input style="border: none;" id="searchInput" data-bs-toggle="dropdown" aria-expanded="false" type="search"
+            class="form-control shadow-none" placeholder="Search books, authors, Publishers, ISBN No...">
+
+          <!-- Dropdown for Suggestions -->
+          <ul class="dropdown-menu" aria-labelledby="searchInput">
+            <li><a class="dropdown-item" href="#">To Kill a Mockingbird</a></li>
+            <li><a class="dropdown-item" href="#">World Best Ex-Girlfriend</a></li>
+            <li><a class="dropdown-item" href="#">The Great Gatsby</a></li>
+            <li><a class="dropdown-item" href="#">The Catcher in the Rye</a></li>
+            <li><a class="dropdown-item" href="#">Pride and Prejudice</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="listing-dropdown"><a href="#"><span>Fiction</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li>
+                <a href="#">Column 1 link 1</a>
+                <a href="#">Column 1 link 2</a>
+                <a href="#">Column 1 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 2 link 1</a>
+                <a href="#">Column 2 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 3 link 1</a>
+                <a href="#">Column 3 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 4 link 1</a>
+                <a href="#">Column 4 link 2</a>
+                <a href="#">Column 4 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 5 link 1</a>
+                <a href="#">Column 5 link 2</a>
+                <a href="#">Column 5 link 3</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="offers.html" class="navbar__offersLinks">Offers</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="margin-top: -14px;"></i>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="search-container-two">
+    <i class="search-icon-two bi bi-search"></i> <!-- Using FontAwesome icon -->
+    <input type="search" class="search-input-two form-control shadow-none"
+      placeholder="Search books, authors, Publishers, ISBN No..." id="searchBox" data-bs-toggle="dropdown"
+      aria-expanded="false">
+    <!-- Dropdown for Suggestions -->
+    <ul class="dropdown-menu" aria-labelledby="searchBox">
+      <li><a class="dropdown-item" href="#">To Kill a Mockingbird</a></li>
+      <li><a class="dropdown-item" href="#">World Best Ex-Girlfriend</a></li>
+      <li><a class="dropdown-item" href="#">The Great Gatsby</a></li>
+      <li><a class="dropdown-item" href="#">The Catcher in the Rye</a></li>
+      <li><a class="dropdown-item" href="#">Pride and Prejudice</a></li>
+    </ul>
+  </div>
+
+    
+
+    <main class="main">
+
+        <div class="section__fillGap__cart">
+
+        </div>
+
+        <!-- Cart Section -->
+        <div class="container my-lg-4 my-0 cart__container">
+            <div class="row">
+                <div class="container breadcumb__section">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-3">
+                            <li class="breadcrumb-item breadcrumb__home"><i style="font-weight: 600;"
+                                    class="bi bi-arrow-left me-2"></i><a href="#" class="breadcrumb__home">Home</a></li>
+                            <li class="breadcrumb-item active active__breadcrumb" aria-current="page">Shopping Cart</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- Left Side (Cart Items) -->
+                <div class="col-lg-6 col-12 cart__wrapper mb-lg-0 mb-4">
+                    <!-- Cart Item 1 -->
+                    <div class="card mb-4 cart-item">
+                        <div class="card-body d-flex align-items-center position-relative">
+                            <img src="assets/img/product-item2.jpg" alt="Product" class="cart__productImage me-3">
+                            <div class="flex-grow-1">
+                                <h5 class="cart__bookName">Ratan Tata : A Life</h5>
+                                <p class="cart__authorName">by Anubhav Sinha</p>
+                                <p>
+                                    <span class="cartSale__price">₹120</span>
+                                    <span class="cartRegular__price">₹150</span>
+                                    <span class="cart__mainDiscount">(-20%)</span>
+                                </p>
+                                <div class="d-flex align-items-center quantity__box">
+                                    <span class="me-2 mt-2 qty__text">Quantity:</span>
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement"
+                                        id="decrementBtn">
+                                        <i class="bi bi-dash-lg inc__button__icon"></i>
+                                    </button>
+                                    <input type="text"
+                                        class="qty__amount form-control form-control-sm mx-2 mt-2 text-center quantity-input"
+                                        value="3" id="quantityInput">
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment"
+                                        id="incrementBtn">
+                                        <i class="bi bi-plus-lg inc__button__icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-end remove-button">
+                                <button class="btn btn-sm btn-outline-danger">X</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="card mb-4 cart-item">
+                        <div class="card-body d-flex align-items-center position-relative">
+                            <img src="assets/img/product-item1.jpg" alt="Product" class="me-3 cart__productImage">
+                            <div class="flex-grow-1">
+                                <h5 class="cart__bookName">The Drowning (Book 3)</h5>
+                                <p class="cart__authorName">The Drowning (Book 3)</p>
+                                <p>
+                                    <span class="cartSale__price">₹120</span>
+                                    <span class="cartRegular__price">₹150</span>
+                                    <span class="cart__mainDiscount">(-20%)</span>
+                                </p>
+                                <div class="d-flex align-items-center quantity__box">
+                                    <span class="me-2 mt-2 qty__text">Quantity:</span>
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement"
+                                        id="decrementBtn">
+                                        <i class="bi bi-dash-lg inc__button__icon"></i>
+                                    </button>
+                                    <input type="text"
+                                        class="qty__amount form-control form-control-sm mx-0 mt-2 text-center quantity-input"
+                                        value="5" id="quantityInput">
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment"
+                                        id="incrementBtn">
+                                        <i class="bi bi-plus-lg inc__button__icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-end remove-button">
+                                <button class="btn btn-sm btn-outline-danger">X</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="card mb-4 cart-item">
+                        <div class="card-body d-flex align-items-center position-relative">
+                            <img src="assets/img/product-item4.jpg" alt="Product" class="me-3 cart__productImage">
+                            <div class="flex-grow-1">
+                                <h5 class="cart__bookName">World's Best Ex-Girlfriend</h5>
+                                <p class="cart__authorName">Details about this product...</p>
+                                <p>
+                                    <span class="cartSale__price">₹100</span>
+                                    <span class="cartRegular__price">₹130</span>
+                                    <span class="cart__mainDiscount">(-23%)</span>
+                                </p>
+                                <div class="d-flex align-items-center quantity__box">
+                                    <span class="me-2 mt-0 qty__text">Quantity:</span>
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement"
+                                        id="decrementBtn">
+                                        <i class="bi bi-dash-lg inc__button__icon"></i>
+                                    </button>
+                                    <input type="text"
+                                        class="qty__amount form-control form-control-sm mx-0 mt-2 text-center quantity-input"
+                                        value="5" id="quantityInput">
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment"
+                                        id="incrementBtn">
+                                        <i class="bi bi-plus-lg inc__button__icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-end remove-button">
+                                <button class="btn btn-sm btn-outline-danger">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (Additional Content) -->
+                <div class="col-lg-5 col-12">
+                    <div class="price-details">
+                        <div class="apply__couponBox">
+                            <!-- Search Widget -->
+                            <div class="search-widget widget-item">
+
+                                <h3 class="apply__couponTitle">Apply Coupon</h3>
+                                <form action="">
+                                    <input type="text" class="coupon__codeInput" placeholder="Enter Coupon Code">
+                                    <button type="submit" class="button__applyCoupon" title="Search"><span
+                                            class="mx-2">Apply</span></button>
+                                </form>
+
+                            </div><!--/Search Widget -->
+                        </div>
+
+
+                        <h5 class="text-left mb-4 price__detailsText">Price Details (2 Items)</h5>
+
+                        <!-- Price Breakdown -->
+                        <div class="d-flex justify-content-between">
+                            <span class="mrp__text">Total MRP</span>
+                            <span class="mrp__price">₹9887.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <span class="mrp__text">Discount on MRP</span>
+                            <span class="mrp__priceDiscount">- ₹3183.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="mrp__text fw-bold">Order Value</span>
+                            <span class="mrp__price">₹6704.00</span>
+                        </div>
+
+                        <!-- Other Charges -->
+                        <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px dashed #ccc;padding-bottom:10px">
+                            <span class="mrp__text">Shipping Charges</span>
+                            <span class="mrp__priceDiscount">Free</span>
+                        </div>
+
+                        <!-- Total Payment -->
+                        <div class="d-flex justify-content-between mt-3">
+                            <strong class="mrp__text">You Pay</strong>
+                            <span class="mrp__price">₹6704.00</span>
+                        </div>
+
+                        <!-- Savings -->
+                        <div class="mt-4 text-left">
+                            <p class="savedPrice">Congrats! ₹3183 saved on this order</p>
+                            <p class="cannot__note">Note: Order cannot be cancelled once packed</p>
+                        </div>
+
+                     <!-- Payment Options wrapper -->
+                        <div class="payment__options mt-4 p-3">
+                            <h5 class="mb-3">Select Payment Method</h5>
+                            <!-- Payment Options -->
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="netBanking">
+                                    <img src="assets/img/icons/upi.png" alt="Net Banking" class="payment__icon me-3">
+                                    <span class="payment__optionText">Net Banking</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="netBanking" value="netBanking">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="creditDebit">
+                                    <img src="assets/img/icons/creditCard.png" alt="Credit/Debit Card" class="payment__icon me-3">
+                                    <span class="payment__optionText">Credit/Debit Card</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="creditDebit" value="creditDebit">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="upi">
+                                    <img src="assets/img/icons/wallet.png" alt="Wallet" class="payment__icon me-3">
+                                    <span class="payment__optionText">Wallet</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="upi" value="upi">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="cashOnDelivery">
+                                    <img src="assets/img/icons/cash-on-delivery.png" alt="Cash on Delivery" class="payment__icon me-3">
+                                    <span class="payment__optionText">Cash on Delivery</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="cashOnDelivery" value="cashOnDelivery">
+                            </div>
+                           
+                        </div>
+
+                         <!-- COD Notice -->
+                         <div id="codNotice" class="codNoticeText">
+                            Note: An extra ₹10 will be applicable for Cash on Delivery.
+                        </div>
+                        
+
+
+                        <!-- Proceed to Payment -->
+                        <div class="text-center mt-4 w-100 payment__button">
+                            <a href="payment-success.html" target="_blank" class="payment__buttonText">PROCEED TO
+                                PAYMENT</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
