@@ -1071,9 +1071,9 @@
 }
 
 .cart__authorName{
-    font-size: 12px;
-    color: #6c757d;
-    margin-top: -2px;
+    font-size: 11px;
+    color: #939da6;
+    margin-top: -4px;
 }
 .cart__bookName{
     font-size: 16px;
@@ -1102,7 +1102,7 @@
 
 .cartSale__price {
     color: #242323;
-    font-size: 1.01rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 .quantity__box{
@@ -1203,7 +1203,7 @@
 .quantity-input {
     width: 50px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 4px;
 }
 .qty__amount{
@@ -1238,7 +1238,7 @@
     color: #fff;
 }
 .cart__productImage{
-    height: 168px;
+    height: 193px;
     border-radius: 0px;
     border: 1px solid #ddd;
     padding: 10px;
@@ -1519,14 +1519,14 @@
     }
 
     .cart__bookName {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .remove-button {
         position: absolute;
         top: -3px;
         color: #242323;
-        right: -26px;
+        right: -7px;
     }
     .qty__text{
         display: none;
@@ -1713,8 +1713,8 @@
    
 }
 .quantity__box {
-    margin-bottom: 20px;
-    margin-top: -16px;
+    margin-bottom: 7px!important;
+    margin-top: -22px;
 }
 .wishlist__productPrice{
     margin-top: -10px;
