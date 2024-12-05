@@ -78,10 +78,48 @@
             <span class="cart__topbarText">Cart</span>
           </a>
 
-          <a href="profile.html" class="signIn__topbar">
+          <a href="user-profile.html" class="signIn__topbar">
             <span class="signIn__topbarText">Sign In</span>
             <span><img class="user__icon" src="assets/img/icons/user.png" alt=""></span>
           </a>
+          <!-- My Account Dropdown -->
+          <div class="myAccount">
+            <a href="user-profile.html" class="myAccount__topbar ms-1">
+              <span class="myAccount__topbarText"> My Account <i class="bi bi-chevron-down"></i></span>
+              <span><img class="user__icon" src="assets/img/icons/user.png" alt=""></span>
+            </a>
+            <div class="myAccount__droppdown">
+              <!-- Section 1: User Info -->
+              <div class="user__info">
+                <div class="user__details">
+                  <img src="assets/img/icons/user.png" alt="User Icon" class="user__avatar">
+                  <span class="user__name">Prakash</span>
+                </div>
+                <button class="btn viewProfile__btn">View Profile</button>
+              </div>
+              <hr>
+              <!-- Section 2: Account Options -->
+              <ul class="account__options">
+                <li>
+                  <a href="user-profile.html">
+                    <i class="bi bi-box"></i> View Orders
+                  </a>
+                </li>
+                <h4 class="myAccount__dropdown__title">Account Details</h4>
+                <li>
+                  <a href="user-profile.html">
+                    <i class="bi bi-geo-alt"></i> Saved Addresses
+                  </a>
+                </li>
+                <li>
+                  <a href="user-profile.html">
+                    <i class="bi bi-box-arrow-right"></i> Sign Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
 
         </div>
       </div>
@@ -108,11 +146,16 @@
 
           <!-- Dropdown for Suggestions -->
           <ul class="dropdown-menu" aria-labelledby="searchInput">
-            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item1.jpg" alt="">To Kill a Mockingbird</a></li>
-            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item2.jpg" alt="">World Best Ex-Girlfriend</a></li>
-            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item3.jpg" alt="">The Great Gatsby</a></li>
-            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item4.jpg" alt="">The Catcher in the Rye</a></li>
-            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item7.jpg" alt="">Pride and Prejudice</a></li>
+            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage"
+                  src="assets/img/product-item1.jpg" alt="">To Kill a Mockingbird</a></li>
+            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage"
+                  src="assets/img/product-item2.jpg" alt="">World Best Ex-Girlfriend</a></li>
+            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage"
+                  src="assets/img/product-item3.jpg" alt="">The Great Gatsby</a></li>
+            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage"
+                  src="assets/img/product-item4.jpg" alt="">The Catcher in the Rye</a></li>
+            <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage"
+                  src="assets/img/product-item7.jpg" alt="">Pride and Prejudice</a></li>
           </ul>
         </div>
       </div>
@@ -187,11 +230,16 @@
       aria-expanded="false">
     <!-- Dropdown for Suggestions -->
     <ul class="dropdown-menu" aria-labelledby="searchBox">
-      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item7.jpg" alt="">To Kill a Mockingbird</a></li>
-      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item3.jpg" alt="">World Best Ex-Girlfriend</a></li>
-      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item5.jpg" alt="">The Great Gatsby</a></li>
-      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item2.jpg" alt="">The Catcher in the Rye</a></li>
-      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item6.jpg" alt="">Pride and Prejudice</a></li>
+      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item7.jpg"
+            alt="">To Kill a Mockingbird</a></li>
+      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item3.jpg"
+            alt="">World Best Ex-Girlfriend</a></li>
+      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item5.jpg"
+            alt="">The Great Gatsby</a></li>
+      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item2.jpg"
+            alt="">The Catcher in the Rye</a></li>
+      <li><a class="dropdown-item" href="#"><img class="searchInput__dropdownImage" src="assets/img/product-item6.jpg"
+            alt="">Pride and Prejudice</a></li>
     </ul>
   </div>
 
@@ -237,59 +285,59 @@
       </div>
     </div>
 
-        <!-- ======= Editors Picks Services Section ======= -->
-        <section id="featured-services" class="featured-services" style="margin-top: -30px;">
-          <div class="container" data-aos="fade-up">
-            <h3 class="title__ofHomepage mb-3">Category</h3>
-            <div class="row">
-              <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
-                <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="100">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F849C6901D1-youngadult-tile.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Young Adult Romantasy</h5>
-                  </div>
-                </div>
+    <!-- ======= Editors Picks Services Section ======= -->
+    <section id="featured-services" class="featured-services" style="margin-top: -30px;">
+      <div class="container" data-aos="fade-up">
+        <h3 class="title__ofHomepage mb-3">Category</h3>
+        <div class="row">
+          <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F849C6901D1-youngadult-tile.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Young Adult Romantasy</h5>
               </div>
-    
-              <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
-                <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="200">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F97063F99EBling_murder-tile.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Chilling Murder Mysteries</h5>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-md-6 col-6 mt-4 mt-lg-0 col-lg-3 d-flex align-items-stretch">
-                <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="300">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F8364327E533-nostalgic-tile.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Nostalgic Historical Fiction</h5>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-md-6 col-6 mt-4 mt-lg-0  col-lg-3 d-flex align-items-stretch">
-                <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="400">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F110912375Ee_brave_new-tile.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">The Brave new AI World</h5>
-                  </div>
-                </div>
-              </div>
-    
             </div>
-    
           </div>
-        </section><!-- End Featured Services Section -->
+
+          <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F97063F99EBling_murder-tile.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chilling Murder Mysteries</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-6 mt-4 mt-lg-0 col-lg-3 d-flex align-items-stretch">
+            <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F8364327E533-nostalgic-tile.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nostalgic Historical Fiction</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-6 mt-4 mt-lg-0  col-lg-3 d-flex align-items-stretch">
+            <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="400">
+              <img
+                src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F110912375Ee_brave_new-tile.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Brave new AI World</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
 
 
     <!-- End Hero Section  -->
