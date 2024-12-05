@@ -244,12 +244,17 @@
 
               <div class="col-lg-3" style="border-right: 1px dashed #ddd;">
                 <div class="userAccount__details">
-                  <img src="assets/img/icons/user.png" alt="">
+                  <!-- Clickable Image with Change Text -->
+                  <div class="userAccount__image">
+                    <img src="assets/img/team/team-1.jpg" alt="User Image" class="userAccount__image-img" id="profileImage">
+                    <span class="userAccount__change-text" onclick="changeImage()">Change</span>
+                  </div>
                   <div class="userAccount__data">
                     <h4 class="userAccount__name">Abhijit Singh</h4>
                     <p class="userAccount__phone">+91 970612345</p>
                   </div>
                 </div>
+                
                 <div class="accountDetails__title">
                   <h4>Account Details</h4>
                 </div>
@@ -283,21 +288,15 @@
                               class="personalDetails__spanEmail">arijitsingh12@gmail.com</span></p>
                         </div>
                       </div>
-                      <div class="col-lg-4 text-center order-1 order-lg-2">
-                        <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
-                      </div>
                     </div>
                   </div>
                   <div class="tab-pane" id="departments-tab-2">
                     <div class="row">
-                      <div class="col-lg-8 details order-2 order-lg-1">
+                      <div class="col-lg-12 details order-2 order-lg-1">
                         <h6 class="navTab__title">My Orders</h6>
                         <div>
                           <p>You don't have any orders yet</p>
                         </div>
-                      </div>
-                      <div class="col-lg-4 text-center order-1 order-lg-2">
-                        <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
                       </div>
                     </div>
                   </div>
@@ -433,9 +432,9 @@
                   </div>
                   <div class="tab-pane" id="departments-tab-4">
                     <div class="row">
-                      <div class="col-lg-8 details order-2 order-lg-1">
+                      <div class="col-lg-12 details order-2 order-lg-1">
                         <h6 class="navTab__title">Change Password</h6>
-                        <div class="changePassword__wrapper p-4">
+                        <div class="changePassword__wrapper p-2">
                           <form>
                             <!-- Current Password -->
                             <div class="form-floating mb-3 position-relative">
@@ -473,9 +472,6 @@
                         </div>
                         
 
-                      </div>
-                      <div class="col-lg-4 text-center order-1 order-lg-2">
-                        <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
                       </div>
                     </div>
                   </div>
@@ -761,6 +757,33 @@
     }
 
   </Script>
+
+  <script>
+    function changeImage() {
+  // Create an input element of type file
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*'; // Accept image files
+
+  // Trigger input click to open the file dialog
+  input.click();
+
+  input.onchange = function(e) {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(readerEvent) {
+      const profileImage = document.getElementById('profileImage');
+      profileImage.src = readerEvent.target.result; // Change the image source
+    };
+
+    if (file) {
+      reader.readAsDataURL(file); // Read the image as a Data URL
+    }
+  };
+}
+
+  </script>
 
 </body>
 

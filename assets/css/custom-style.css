@@ -1,3 +1,8 @@
+.searchInput__dropdownImage{
+    width: 30px;
+    height: 35px;
+    margin-right: 10px;
+}
 .cartAddress__wrapper {
     margin-top: 20px;
     padding: 20px;
