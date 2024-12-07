@@ -379,8 +379,8 @@ h6 {
   display: flex;
 }
 .tab-content{
-  padding-top: 20px;
-  margin-left: -10px;
+  /* padding-top: 20px;*/
+  margin-left: 20px; 
 }
 .tab-content p{
   font-size: 14px;
@@ -2619,6 +2619,9 @@ section,
   .topbar h4{
     font-size: 11px;
   }
+  .tab-content{
+  margin-left: -16px; 
+}
   .footer__bottom__one .footer__bottom__smallBox img{
     width: 45px;
     height: 45px;

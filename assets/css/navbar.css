@@ -279,6 +279,7 @@
 --------------------------------------------------------------*/
 .departments {
   overflow: hidden;
+  margin-top: 25px;
 }
 
 .departments .nav-tabs {
