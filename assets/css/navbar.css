@@ -1,3 +1,97 @@
+/* Order List */
+.order__boxSingle{
+  padding: 18px 20px;
+}
+.userOrder__list{
+  border: 1px solid #ddd;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+.orderBox__small{
+  margin-top: 20px;
+}
+.user__orderStatus{
+  font-weight: 600;
+  font-size: 15px!important;
+  color: #121212!important;
+}
+.saveAddress__wrapper{
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+.order__image{
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.user__addressEditButton{
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-weight: 600;
+  color: #ce3c3c;
+  font-size: 13px;
+  border: 1px solid #c04343;
+}
+.userAddress__headerText{
+  font-size: 17px;
+  color: #1f1e1e;
+  font-weight: 600; 
+}
+.user__addressText{
+  color: #6a6868!important;
+}
+.userAddress__headerDefaultText{
+  font-size: 15px;
+  color: #6a6868;
+  font-weight: 600; 
+}
+.user__Addressinfo{
+  margin-top: -10px;
+}
+.user__phoneNo{
+  color: #696767;
+
+}
+.user__email{
+  color: #696767;
+
+}
+.savedAddress__boxSingle{
+  padding: 10px;
+}
+.user__orderTitle{
+  font-weight: 600;
+}
+.orderBox__Details{
+  margin-top: 10px;
+}
+.user__orderQty{
+  margin-top: -14px;
+  font-size: 13px!important;
+}
+.user__orderDate{
+  margin-top: -7px;
+}
+.order__image img{
+  max-height: 120px;
+}
+.order__receivedText{
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 11px;
+}
+.user__orderTrackingIdText{
+  margin-top: -10px;
+  font-size: 11px;
+}
 /* Scoped Custom Styling */
 .addAddress__wrapper .custom-input {
   border: 1px solid #ced4da;
