@@ -43,7 +43,7 @@
 .userAddress__headerText{
   font-size: 17px;
   color: #1f1e1e;
-  font-weight: 600; 
+  font-weight: 600;
 }
 .user__addressText{
   color: #6a6868!important;
@@ -51,7 +51,7 @@
 .userAddress__headerDefaultText{
   font-size: 15px;
   color: #6a6868;
-  font-weight: 600; 
+  font-weight: 600;
 }
 .user__Addressinfo{
   margin-top: -10px;
@@ -284,11 +284,14 @@
 }
 
 .userAccount__details{
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .accountDetails__title{
-  margin-top: 40px;
+  margin-top: 22px;
   margin-bottom: 20px;
+}
+.account__detailsLinks{
+  margin-left: -10px;
 }
 .accountDetails__title h4{
   color: #1f1e1e;
@@ -382,7 +385,7 @@
 
 .departments .nav-link {
   border: 0;
-  padding: 12px 15px 12px 0;
+  /* padding: 12px 15px 12px 0; */
   transition: 0.3s;
   color: #6a6666;
   border-radius: 0;
@@ -401,7 +404,7 @@
 
 .departments .nav-link.active {
   color: #1f1e1e;
-  background-color: #eff3f8;
+  /* background-color: #eff3f8; */
   font-weight: 600;
 }
 
@@ -430,7 +433,7 @@
   }
 
   .departments .nav-link.active {
-    background: #dfecfa
+    background: #f8fafb;
   }
 }
 
@@ -551,7 +554,7 @@ hr {
 /* HERE THE ACCOUNT DROPDOWN SECTION COMPLETED */
 .topbar__two {
     position: fixed; /* Keeps it fixed on the top */
-    top: 37px!important;  
+    top: 37px!important;
     left: 0;         /* Ensures it starts from the left */
     width: 100%;     /* Stretches across the full width of the page */
     background-color: #fff; /* Add a background color */
@@ -598,7 +601,7 @@ hr {
     box-shadow: 0 0 1px rgba(208, 78, 78, 0.8); /* Glowing effect around the button */
     transition: all 0.3s ease; /* Smooth transition effect */
   }
-  
+
   .signIn__topbar:hover {
     box-shadow: 0 0 10px rgba(208, 78, 78, 1); /* Stronger glow on hover */
     color: #fff!important;
@@ -619,7 +622,7 @@ hr {
   }
   .myAccount__topbar:hover {
     color: #333!important;
-  } 
+  }
 .wishlist__topbar{
     color: #444;
     font-weight: 600;
@@ -730,6 +733,24 @@ hr {
         margin-top: -11px;
         justify-content: space-between;
     }
+    .departments .nav-link {
+      border: 0;
+      /* padding: 12px 15px 12px 0; */
+      transition: 0.3s;
+      color: #6a6666;
+      border-radius: 0;
+      font-weight: 500;
+      font-size: 13.5px;
+      padding-left: 10px;
+      border-radius: 10px;
+      margin-bottom: 6px;
+    }
+    .departments .nav-link.active {
+      color: #1f1e1e;
+      font-weight: 600;
+      font-size: 13.5px;
+    }
+    
     .topNavbar__leftLinks{
         display:none;
     }
@@ -761,7 +782,7 @@ hr {
         transition: all 0.3s ease; /* Smooth transition effect */
         box-shadow: none;
       }
-  
+
       .signIn__topbar:hover {
         box-shadow: none; /* Stronger glow on hover */
         color: #fff!important;
@@ -832,7 +853,7 @@ hr {
 .personalDetails__spanEmail{
   padding-left: 58px;
   font-size: 14px;
-  
+
 }
 .departments .nav-link:hover {
   color: #333 !important;
