@@ -1014,7 +1014,7 @@ h6 {
     font-family: "Open Sans", sans-serif;
     font-size: 13.5px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     margin-top: 6px;
     line-height:1.4
 }
@@ -1041,7 +1041,7 @@ h6 {
   font-weight: 600;
   text-transform: capitalize;
   background-color: #e14646;
-  padding: 6px 24px;
+  padding: 6px 16px;
   color:#fff;
   letter-spacing: 0.5px;
   margin-left: 20px;
@@ -1052,7 +1052,6 @@ h6 {
   font-weight: 600;
   text-transform: capitalize;
   background-color: #c83d3d;
-  padding: 6px 24px;
   color: #fff!important;
   letter-spacing: 0.5px;
   margin-left: 20px;
